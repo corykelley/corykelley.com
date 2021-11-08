@@ -1,0 +1,43 @@
+.site-header {
+	margin-bottom: 2rem;
+	padding-block: 0.5rem;
+
+	.site-header__container {
+		padding-block: 1rem;
+		margin-inline: auto;
+		width: 90%;
+		max-width: 1440px;
+
+		.desktop {
+			display: none;
+
+			@media only screen and (min-width: 768px) {
+				display: flex;
+			}
+		}
+
+		.mobile {
+			display: block;
+
+			@media only screen and (min-width: 768px) {
+				display: none;
+			}
+		}
+	}
+
+	.desktop {
+		justify-content: space-between;
+
+		.nav__links {
+			display: flex;
+			align-items: center;
+			width: 20%;
+
+			ul {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+	}
+}

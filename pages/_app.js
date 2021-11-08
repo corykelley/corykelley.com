@@ -1,7 +1,16 @@
-import '../styles/globals.css'
+import SiteHeader from '../components/SiteHeader';
+import SiteFooter from '../components/SiteFooter';
+
+import '../styles/globals.scss';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+	return (
+		<>
+			<SiteHeader />
+			<Component {...pageProps} />
+			<SiteFooter />
+		</>
+	);
 }
 
-export default MyApp
+export default MyApp;
