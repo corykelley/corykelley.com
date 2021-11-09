@@ -11,7 +11,7 @@ import { postFilePaths, POSTS_PATH } from '../../utils/mdxUtils';
 
 const components = {
 	a: CustomLink,
-	TestComponent: dynamic(() => import('../../components/TestComponent')),
+	// TestComponent: dynamic(() => import('../../components/TestComponent')),
 	Head,
 };
 

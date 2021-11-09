@@ -1,14 +1,13 @@
-import SiteHeader from '../components/SiteHeader';
-import SiteFooter from '../components/SiteFooter';
+import Layout from '../components/Layout';
 
-import '../styles/globals.scss';
+import 'tailwindcss/tailwind.css';
 
 function MyApp({ Component, pageProps }) {
 	return (
 		<>
-			<SiteHeader />
-			<Component {...pageProps} />
-			<SiteFooter />
+			<Layout>
+				<Component {...pageProps} />
+			</Layout>
 		</>
 	);
 }

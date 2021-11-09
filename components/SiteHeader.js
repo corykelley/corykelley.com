@@ -1,13 +1,13 @@
 export default function SiteHeader() {
 	return (
-		<section className='site-header'>
-			<div className='site-header__container'>
-				<header className='mobile'>
-					<div className='nav__hamburger'>+</div>
-				</header>
-				<header className='desktop'>
-					<h1 className='nav__logo'>CK</h1>
-					<nav className='nav__links'>
+		<header className='mb-12 py-4'>
+			<div className='w-[90%] max-w-screen-2xl mx-auto'>
+				<div className='inline-block md:hidden'>
+					<div>+</div>
+				</div>
+				<div className='hidden md:inline-block'>
+					<h1>CK</h1>
+					<nav>
 						<ul>
 							<li>
 								<a href='#'>Link1</a>
@@ -20,8 +20,8 @@ export default function SiteHeader() {
 							</li>
 						</ul>
 					</nav>
-				</header>
+				</div>
 			</div>
-		</section>
+		</header>
 	);
 }
